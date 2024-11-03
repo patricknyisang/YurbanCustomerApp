@@ -97,7 +97,9 @@ class MyRideScreenState extends State<MyRideScreen> {
                 columns: const <DataColumn>[
                   DataColumn(label: Text('From')),
                   DataColumn(label: Text('To')),
-                  DataColumn(label: Text('Action')),
+                    DataColumn(label: Text('Driver')),
+                       DataColumn(label: Text('Phone')),
+                  DataColumn(label: Text('Status')),
                   
                 ],
                 rows: myrides
@@ -105,6 +107,8 @@ class MyRideScreenState extends State<MyRideScreen> {
                       (data) => DataRow(cells: [
                         DataCell(Text(data.from)),
                         DataCell(Text(data.to)),
+                             DataCell(Text(data.customerfname + ' ' + data.customerlname)),
+                                 DataCell(Text(data.customerphone)),
                         DataCell(Text(data.action)),
                       ]),
                     )

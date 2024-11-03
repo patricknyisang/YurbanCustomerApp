@@ -334,6 +334,7 @@ class _RequestRideScreenState extends State<RequestRideScreen> {
           );
         },
       );
+           
     } else {
       // If failed, show an error message
       showDialog(

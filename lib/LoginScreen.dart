@@ -100,7 +100,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'Login',
+                    'Yurban Customer',
                     style: TextStyle(
                       fontSize: 30, // Increased font size
                       fontWeight: FontWeight.bold,
@@ -133,7 +133,7 @@ class _LoginScreenState extends State<LoginScreen> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12), // Rounded borders
         ),
-        prefixIcon: Icon(Icons.phone, color: Colors.redAccent), // Icon color change
+        prefixIcon: const Icon(Icons.phone, color: Colors.redAccent), // Icon color change
       ),
       validator: (value) {
         if (value == null || value.isEmpty) {
@@ -181,7 +181,7 @@ class _LoginScreenState extends State<LoginScreen> {
       child: ElevatedButton(
         onPressed: _login,
         child: Text(
-          'Yurban Customer',
+          'Login',
           style: TextStyle(
             fontSize: 20, // Increased font size here
             fontWeight: FontWeight.bold, // Optional: make the text bold

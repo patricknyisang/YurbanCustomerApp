@@ -192,7 +192,7 @@ int selectedConstituencyId = 0;
       decoration: InputDecoration(
         labelText: 'First Name',
         border: OutlineInputBorder(),
-        prefixIcon: Icon(Icons.person),
+        prefixIcon: Icon(Icons.person, color: Colors.redAccent),
       ),
       validator: (value) {
         if (value == null || value.isEmpty) {
@@ -209,7 +209,7 @@ int selectedConstituencyId = 0;
       decoration: InputDecoration(
         labelText: 'Last Name',
         border: OutlineInputBorder(),
-        prefixIcon: Icon(Icons.person),
+        prefixIcon: Icon(Icons.person, color: Colors.redAccent),
       ),
       validator: (value) {
         if (value == null || value.isEmpty) {
@@ -227,7 +227,7 @@ int selectedConstituencyId = 0;
       decoration: InputDecoration(
         labelText: 'Phone Number',
         border: OutlineInputBorder(),
-        prefixIcon: Icon(Icons.phone),
+        prefixIcon: Icon(Icons.phone,color: Colors.redAccent),
       ),
       validator: (value) {
         if (value == null || value.isEmpty) {
@@ -245,7 +245,7 @@ int selectedConstituencyId = 0;
       decoration: InputDecoration(
         labelText: 'Email',
         border: OutlineInputBorder(),
-        prefixIcon: Icon(Icons.email),
+        prefixIcon: Icon(Icons.email, color: Colors.redAccent),
       ),
       validator: (value) {
         if (value == null || value.isEmpty) {
@@ -267,10 +267,10 @@ int selectedConstituencyId = 0;
       decoration: InputDecoration(
         labelText: '4-Digit PIN',
         border: OutlineInputBorder(),
-        prefixIcon: Icon(Icons.lock),
+        prefixIcon: Icon(Icons.lock, color: Colors.redAccent),
         suffixIcon: IconButton(
           icon: Icon(
-            _isPinVisible ? Icons.visibility : Icons.visibility_off,
+            _isPinVisible ? Icons.visibility : Icons.visibility_off,color: Colors.redAccent, 
           ),
           onPressed: _togglePinVisibility,
         ),
